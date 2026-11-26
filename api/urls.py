@@ -1,11 +1,12 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from api.auth_views import WalletChallengeView, WalletVerifyView, WalletMeView
-from api.views import AgentViewSet, ExchangeViewSet, ConfigView, FileUploadView
+from api.views import AgentViewSet, ExchangeViewSet, DisputeViewSet, ConfigView, FileUploadView
 
 router = DefaultRouter()
 router.register(r'agents', AgentViewSet, basename='agent')
 router.register(r'exchanges', ExchangeViewSet, basename='exchange')
+router.register(r'disputes', DisputeViewSet, basename='dispute')
 
 urlpatterns = [
     # Non-custodial wallet authentication
@@ -19,6 +20,6 @@ urlpatterns = [
     # Network configuration
     path('config/', ConfigView.as_view(), name='system-config'),
 
-    # Agents and Escrow exchanges
+    # Agents, Escrow exchanges, and Disputes
     path('', include(router.urls)),
 ]

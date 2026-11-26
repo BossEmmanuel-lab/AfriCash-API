@@ -28,6 +28,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 142,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("2500.00"),
+        "available_liquidity_usdc": Decimal("5000.00"),
     },
     {
         "stellar_address": "GAB7TJERCOPRG7P5LZ7T63WUQ46HFLT2CFOH2ZKONV32MXD66KQXERUC",
@@ -52,6 +53,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 218,
         "min_usdc_amount": Decimal("10.00"),
         "max_usdc_amount": Decimal("5000.00"),
+        "available_liquidity_usdc": Decimal("10000.00"),
     },
     {
         "stellar_address": "GDFOTL7DUXRDB5UUWVNC4GVFINHSO3M63DMU7LGLWGMASYOYTJNMBRAO",
@@ -76,6 +78,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 96,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("2000.00"),
+        "available_liquidity_usdc": Decimal("4000.00"),
     },
     {
         "stellar_address": "GAJVKLC6PZQNFH7TTPSJCMS22DENJLGXJIE64U4K42N3IXOJ6ANPLWAK",
@@ -100,6 +103,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 175,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("1500.00"),
+        "available_liquidity_usdc": Decimal("3000.00"),
     },
     {
         "stellar_address": "GATVSBGUNP7VM2PNKMNQ66DY637Q73JMFZJBV4QS2QYX755GP4NFT5L4",
@@ -124,6 +128,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 54,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("800.00"),
+        "available_liquidity_usdc": Decimal("1500.00"),
     },
     {
         "stellar_address": "GB6EHW4XWKVYNZHUZHPSGOCDHMWSXXSDJGKZV4YXBCSYYOG3U2UINTZV",
@@ -148,6 +153,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 310,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("3000.00"),
+        "available_liquidity_usdc": Decimal("6000.00"),
     },
     {
         "stellar_address": "GA63P37KQM4A6OCKXYWINHPSBDV6VUZLRQEP3IPDDKAJ5OCO24JSGPGR",
@@ -172,6 +178,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 128,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("1500.00"),
+        "available_liquidity_usdc": Decimal("3000.00"),
     },
     {
         "stellar_address": "GCICUZEDA7A6HLADKM2IRMMREGQ7ODFHYZ6G2AUSU36HFN4HLZKGS62R",
@@ -196,6 +203,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 87,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("1200.00"),
+        "available_liquidity_usdc": Decimal("2500.00"),
     },
     {
         "stellar_address": "GCVHE2V63VIZTLY2QBY2JEW5ENRQYSD2XQMFDX5RQO7HGCKXWTJXP4WH",
@@ -220,6 +228,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 112,
         "min_usdc_amount": Decimal("5.00"),
         "max_usdc_amount": Decimal("2000.00"),
+        "available_liquidity_usdc": Decimal("4000.00"),
     },
     {
         "stellar_address": "GDRKWF22XCQI375QUL3GRBKBEU6DVLFOLUUXCOYE6JSSSVVSU7276J6U",
@@ -244,6 +253,7 @@ DEFAULT_AGENTS = [
         "completed_trades": 74,
         "min_usdc_amount": Decimal("10.00"),
         "max_usdc_amount": Decimal("1500.00"),
+        "available_liquidity_usdc": Decimal("3000.00"),
     },
 ]
 

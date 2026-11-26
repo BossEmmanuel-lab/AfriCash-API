@@ -28,6 +28,7 @@ class ExchangeApiTest(TestCase):
             is_available=True,
             min_usdc_amount=Decimal('10.00'),
             max_usdc_amount=Decimal('500.00'),
+            available_liquidity_usdc=Decimal('1000.00'),
         )
 
         # Setup customer

@@ -163,8 +163,8 @@ REST_FRAMEWORK = {
 # Swagger & OpenAPI Documentation settings
 SPECTACULAR_SETTINGS = {
     'TITLE': 'AfriCash API',
-    'DESCRIPTION': 'Non-custodial cash-agent and Soroban escrow payment API on Stellar Testnet.',
-    'VERSION': '1.0.0',
+    'DESCRIPTION': 'Non-custodial cash-agent liquidity, Soroban escrow, and dispute resolution API on Stellar Testnet (v2.0).',
+    'VERSION': '2.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
     'COMPONENT_SPLIT_REQUEST': True,
     'SECURITY': [
@@ -176,6 +176,9 @@ SPECTACULAR_SETTINGS = {
         'deepLinking': True,
         'persistAuthorization': True,
         'displayOperationId': True,
+    },
+    'ENUM_NAME_OVERRIDES': {
+        'DisputeDecisionEnum': 'api.models.DisputeDecision.choices',
     },
 }
 
@@ -208,8 +211,14 @@ CHALLENGE_TIMEOUT_SECONDS = int(os.getenv('CHALLENGE_TIMEOUT_SECONDS', '900'))
 STELLAR_NETWORK_PASSPHRASE = os.getenv('STELLAR_NETWORK_PASSPHRASE', 'Test SDF Network ; September 2015')
 STELLAR_RPC_URL = os.getenv('STELLAR_RPC_URL', 'https://soroban-testnet.stellar.org')
 STELLAR_HORIZON_URL = os.getenv('STELLAR_HORIZON_URL', 'https://horizon-testnet.stellar.org')
+STELLAR_EXPLORER_BASE_URL = os.getenv('STELLAR_EXPLORER_BASE_URL', 'https://stellar.expert/explorer/testnet/tx')
 USDC_ASSET_CONTRACT_ID = os.getenv('USDC_ASSET_CONTRACT_ID', 'CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWUQX3PUL5L5OBOFBUC')
 ESCROW_CONTRACT_ID = os.getenv('ESCROW_CONTRACT_ID', 'CCX2P2KDVKVVMX55OPUVYESN5XD73GEJ7EWLNZWNMNLAVZIQVZH5RNRC')
+DISPUTE_ARBITRATOR_ADDRESSES = [
+    addr.strip()
+    for addr in os.getenv('DISPUTE_ARBITRATOR_ADDRESSES', '').split(',')
+    if addr.strip()
+]
 
 # Media files (Local storage)
 MEDIA_URL = '/media/'
