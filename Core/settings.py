@@ -177,6 +177,7 @@ SPECTACULAR_SETTINGS = {
         'persistAuthorization': True,
         'displayOperationId': True,
     },
+    'REDOC_DIST': 'https://cdn.jsdelivr.net/npm/redoc@2.1.5',
     'ENUM_NAME_OVERRIDES': {
         'DisputeDecisionEnum': 'api.models.DisputeDecision.choices',
     },
